@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>R&B Afla Group test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+  <form class="js-form form" action="/" method="get">
+    <ul class="form__list">
+      <li class="form__item">
+        <ul class="js-radio-list plan">
+          <li class="plan__item">
+            <input class="visually-hidden" type="radio" name="license" id="license-one" value="13" data-number="1">
+            <label class="plan__label" for="license-one">
+              <div class="plan__icon-wrapper">
+                <span class="plan__icon"></span>
+                <span class="plan__title">license plan #1</span>
+              </div>
+              <span class="plan__desc">$13 per license</span>
+            </label>
+          </li>
+          <li class="plan__item">
+            <input class="visually-hidden" type="radio" name="license" id="license-two" value="22" data-number="2">
+            <label class="plan__label" for="license-two">
+              <div class="plan__icon-wrapper">
+                <span class="plan__icon"></span>
+                <span class="plan__title">license plan #2</span>
+              </div>
+              <span class="plan__desc">$22 per license</span>
+            </label>
+          </li>
+          <li class="plan__item">
+            <input class="visually-hidden" type="radio" name="license" id="license-three" value="34" data-number="3"
+                   checked>
+            <label class="plan__label" for="license-three">
+              <div class="plan__icon-wrapper">
+                <span class="plan__icon"></span>
+                <span class="plan__title">license plan #3</span>
+              </div>
+              <span class="plan__desc">$34 per license</span>
+            </label>
+          </li>
+        </ul>
+      </li>
+      <li class="form__item form__item--number">
+        <label for="amount">Number of licenses:</label>
+        <select class="js-select" name="amount" id="amount">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+        </select>
+      </li>
+      <li class="form__item form__item--total">
+        <div class="total">
+          <span class="total__title">Total:</span>
+          <span class="js-total-amount total__amount">$340</span><sup class="total__measure">us</sup>
+        </div>
+        <button class="button" type="submit">buy now</button>
+        <div class="info">
+          <span>Selected plan:</span>
+          <span class="js-selected-plan">#3</span>
+        </div>
+      </li>
+    </ul>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
